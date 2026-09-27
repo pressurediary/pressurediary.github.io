@@ -28,6 +28,7 @@
         <li>Hesap açman gerekmez; adını, e-postanı veya telefon numaranı istemeyiz.</li>
         <li>Ücretsiz sürümde Google AdMob ile <strong>kişiselleştirilmemiş</strong> reklam gösterilir. Sağlık verilerin reklam sistemine asla aktarılmaz.</li>
         <li>"Reklamları kaldır" satın alımı Google Play veya App Store üzerinden yapılır; ödeme bilgilerini görmeyiz.</li>
+        <li>Uygulama çökerse, Firebase Crashlytics ile <strong>yalnızca teknik</strong> bir hata raporu gönderilir. Ayarlardan kapatabilirsin.</li>
       </ul>
     </div>
 
@@ -66,30 +67,42 @@
       Ödeme ve hesap bilgilerini ilgili mağaza işler; biz görmeyiz. Uygulama yalnızca satın almanın yapıldığı bilgisini cihazında saklar
       ve "Satın alımları geri yükle" ile mağazadan yeniden doğrulayabilir.</p>
 
-    <h2>5. İzinler</h2>
+    <h2>5. Hata raporları (Firebase Crashlytics)</h2>
+    <p>Uygulamayı iyileştirmek için, uygulama çöktüğünde veya ciddi bir hata oluştuğunda Google'ın Firebase Crashlytics hizmetine bir hata raporu gönderilir.</p>
+    <ul>
+      <li>Rapor yalnızca <strong>teknik bilgileri</strong> içerir: hatanın kod içindeki yeri (stack trace), cihaz modeli, işletim sistemi ve uygulama sürümü,
+        çökme zamanı ve rastgele üretilmiş bir kurulum kimliği. Gönderim sırasında IP adresin de işlenir.</li>
+      <li>Ölçümlerin, ilaçların, notların veya başka sağlık verilerin rapora <strong>eklenmez</strong>. Rapor adınla, e-postanla veya reklam kimliğinle ilişkilendirilmez.</li>
+      <li>Hata raporları Google tarafından, veri işleyen sıfatıyla ve Türkiye dışındaki (ör. ABD) sunucularda işlenebilir; Crashlytics bu raporları yaklaşık 90 gün saklar.
+        Ayrıntılar: <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.</li>
+      <li>Hukuki dayanak, uygulamanın güvenilir çalışmasını sağlamaya yönelik meşru menfaatimizdir.
+        Bu gönderimi istediğin zaman Ayarlar &gt; "Hata raporları gönder" seçeneğinden kapatabilirsin.</li>
+    </ul>
+
+    <h2>6. İzinler</h2>
     <ul>
       <li><strong>Bildirimler:</strong> İlaç hatırlatmalarını göstermek için.</li>
       <li><strong>Tam zamanlı alarm (Android):</strong> Hatırlatmaların dakikasında gelmesi için.</li>
-      <li><strong>İnternet:</strong> Yalnızca reklamların yüklenmesi ve mağaza satın alımları için. Sağlık verilerin internete gönderilmez.</li>
+      <li><strong>İnternet:</strong> Yalnızca reklamların yüklenmesi, mağaza satın alımları ve hata raporları için. Sağlık verilerin internete gönderilmez.</li>
     </ul>
 
-    <h2>6. Saklama süresi ve silme</h2>
-    <p>Veriler sen silene kadar cihazında kalır. Ölçümleri ve ilaçları uygulama içinden tek tek silebilirsin.
+    <h2>7. Saklama süresi ve silme</h2>
+    <p>Veriler sen silene kadar cihazında kalır. Ölçümleri ve ilaçları uygulama içinden tek tek silebilir ya da Ayarlar &gt; "Tüm verileri sil" ile hepsini birden silebilirsin.
       Uygulamayı kaldırdığında cihazdaki tüm uygulama verileri kalıcı olarak silinir. Senin dışa aktardığın yedek ve PDF dosyaları
       ise kaydettiğin yerde kalır.</p>
 
-    <h2>7. Hakların</h2>
+    <h2>8. Hakların</h2>
     <p>KVKK'nın 11. maddesi ve GDPR kapsamında kişisel verilerine ilişkin bilgi alma, düzeltme, silme ve itiraz haklarına sahipsin.
       Uygulama verilerini sunucularımızda tutmadığımız için bu verilere ilişkin talepler çoğunlukla doğrudan uygulama içinden karşılanabilir.
       Reklam verileriyle ilgili taleplerini Google'a iletebilir veya bize <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a> adresinden ulaşabilirsin.</p>
 
-    <h2>8. Çocuklar</h2>
+    <h2>9. Çocuklar</h2>
     <p>Uygulama 16 yaşından küçük çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
 
-    <h2>9. Tıbbi uyarı</h2>
+    <h2>10. Tıbbi uyarı</h2>
     <p>Uygulama yalnızca kayıt tutma ve hatırlatma amaçlıdır; teşhis veya tedavi önerisi sunmaz. Sağlığınla ilgili kararlar için doktoruna danış.</p>
 
-    <h2>10. Değişiklikler</h2>
+    <h2>11. Değişiklikler</h2>
     <p>Bu politika değişirse güncel hali bu sayfada yayınlanır ve yürürlük tarihi güncellenir. Önemli değişiklikler uygulama içinde de duyurulur.</p>
   </section>
 
@@ -103,6 +116,7 @@
         <li>No account is required; we do not ask for your name, email or phone number.</li>
         <li>The free version shows <strong>non-personalized</strong> ads from Google AdMob. Your health data is never shared with the ad system.</li>
         <li>The "Remove ads" purchase is handled by Google Play or the App Store; we never see your payment details.</li>
+        <li>If the app crashes, a <strong>purely technical</strong> crash report is sent via Firebase Crashlytics. You can turn this off in Settings.</li>
       </ul>
     </div>
 
@@ -139,29 +153,41 @@
     <p>"Remove ads" is a one-time purchase processed by Google Play or the Apple App Store. Payment and account details are handled by the store;
       we never see them. The app only stores on your device that the purchase was made and can re-check it with "Restore purchases".</p>
 
-    <h2>5. Permissions</h2>
+    <h2>5. Crash reports (Firebase Crashlytics)</h2>
+    <p>To improve the app, a crash report is sent to Google's Firebase Crashlytics service when the app crashes or hits a serious error.</p>
+    <ul>
+      <li>The report contains <strong>technical information only</strong>: where in the code the error happened (stack trace), device model, operating system and app version,
+        the time of the crash and a randomly generated installation ID. Your IP address is processed while the report is transmitted.</li>
+      <li>Your readings, medications, notes or any other health data are <strong>never</strong> included. The report is not linked to your name, email or advertising ID.</li>
+      <li>Crash reports are processed by Google as a data processor, possibly on servers outside Türkiye (e.g. in the USA); Crashlytics keeps them for about 90 days.
+        Details: <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</li>
+      <li>The legal basis is our legitimate interest in keeping the app reliable.
+        You can turn this off at any time in Settings &gt; "Send crash reports".</li>
+    </ul>
+
+    <h2>6. Permissions</h2>
     <ul>
       <li><strong>Notifications:</strong> to show medication reminders.</li>
       <li><strong>Exact alarms (Android):</strong> so reminders arrive on time.</li>
-      <li><strong>Internet:</strong> only to load ads and for store purchases. Your health data is not sent over the internet.</li>
+      <li><strong>Internet:</strong> only to load ads, for store purchases and crash reports. Your health data is not sent over the internet.</li>
     </ul>
 
-    <h2>6. Retention and deletion</h2>
-    <p>Data stays on your device until you delete it. You can delete readings and medications in the app.
+    <h2>7. Retention and deletion</h2>
+    <p>Data stays on your device until you delete it. You can delete readings and medications one by one, or everything at once with Settings &gt; "Delete all data".
       Uninstalling the app permanently deletes all app data on the device. Backup and PDF files you exported stay wherever you saved them.</p>
 
-    <h2>7. Your rights</h2>
+    <h2>8. Your rights</h2>
     <p>Under KVKK and the GDPR you have the right to access, rectify, erase and object to the processing of your personal data.
       Because we do not keep app data on our servers, most requests can be fulfilled directly in the app.
       For ad-related data you can contact Google, or reach us at <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a>.</p>
 
-    <h2>8. Children</h2>
+    <h2>9. Children</h2>
     <p>The app is not directed to children under 16 and does not knowingly collect data from children.</p>
 
-    <h2>9. Medical disclaimer</h2>
+    <h2>10. Medical disclaimer</h2>
     <p>The app is a logging and reminder tool only; it does not provide diagnosis or treatment advice. Always consult your doctor about your health.</p>
 
-    <h2>10. Changes</h2>
+    <h2>11. Changes</h2>
     <p>If this policy changes, the updated version will be published on this page with a new effective date. Significant changes will also be announced in the app.</p>
   </section>
 
