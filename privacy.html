@@ -1,19 +1,26 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Gizlilik Politikası — Tansiyon Takip" data-title-en="Privacy Policy — Pressure Diary">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gizlilik Politikası · Privacy Policy — Tansiyon Takip / Pressure Diary</title>
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
 <main>
-  <h1>Gizlilik Politikası<br><span class="muted">Privacy Policy</span></h1>
-  <p class="muted">Tansiyon Takip / Pressure Diary · Yürürlük / Effective: 27.09.2026</p>
-  <nav class="lang"><a href="#tr">Türkçe</a> · <a href="#en">English</a></nav>
+  <div class="topbar">
+    <div class="switch" role="group" aria-label="Language / Dil">
+      <button type="button" data-set-lang="tr">Türkçe</button>
+      <button type="button" data-set-lang="en">English</button>
+    </div>
+  </div>
+  <h1><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></h1>
+  <p class="muted" data-lang="tr">Tansiyon Takip · Yürürlük tarihi: 27.09.2026</p>
+  <p class="muted" data-lang="en">Pressure Diary · Effective date: 27 September 2026</p>
 
   <!-- ===================================================== TÜRKÇE -->
-  <section id="tr">
+  <section id="tr" data-lang="tr">
     <h2>Özet</h2>
     <div class="card">
       <ul>
@@ -86,10 +93,9 @@
     <p>Bu politika değişirse güncel hali bu sayfada yayınlanır ve yürürlük tarihi güncellenir. Önemli değişiklikler uygulama içinde de duyurulur.</p>
   </section>
 
-  <hr style="margin:48px 0;border:none;border-top:1px solid var(--border)">
 
   <!-- ===================================================== ENGLISH -->
-  <section id="en" lang="en">
+  <section id="en" data-lang="en">
     <h2>Summary</h2>
     <div class="card">
       <ul>
@@ -159,7 +165,7 @@
     <p>If this policy changes, the updated version will be published on this page with a new effective date. Significant changes will also be announced in the app.</p>
   </section>
 
-  <footer>© 2026 Pressure Diary · <a href="./">Tansiyon Takip / Pressure Diary</a></footer>
+  <footer>© 2026 Pressure Diary · <a href="./"><span data-lang="tr">Ana sayfa</span><span data-lang="en">Home</span></a></footer>
 </main>
 </body>
 </html>

@@ -1,25 +1,34 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Tansiyon Takip · Tansiyon günlüğü ve ilaç hatırlatıcı"
+      data-title-en="Pressure Diary · Blood pressure log and medication reminders">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pressure Diary · Tansiyon Takip</title>
+  <title>Tansiyon Takip · Pressure Diary</title>
   <meta name="description" content="Tansiyon ölçümlerini kaydet, ilaç hatırlatmaları al, doktorun için PDF rapor oluştur. Log blood pressure, get medication reminders, share PDF reports.">
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
 <main>
-  <div class="app">
-    <img src="icon.png" alt="Pressure Diary icon">
-    <div>
-      <h1>Tansiyon Takip</h1>
-      <span class="muted">Pressure Diary</span>
+  <div class="topbar">
+    <div class="switch" role="group" aria-label="Language / Dil">
+      <button type="button" data-set-lang="tr">Türkçe</button>
+      <button type="button" data-set-lang="en">English</button>
     </div>
   </div>
 
-  <div class="card">
-    <h2 style="margin-top:0">Türkçe</h2>
-    <p>Tansiyon ölçümlerini saniyeler içinde kaydet, grafiklerle takip et, ilaçlarını zamanında hatırla ve doktorun için PDF rapor hazırla.
+  <div class="app">
+    <img src="icon.png" alt="">
+    <div>
+      <h1><span data-lang="tr">Tansiyon Takip</span><span data-lang="en">Pressure Diary</span></h1>
+      <span class="muted" data-lang="tr">Tansiyon günlüğü ve ilaç hatırlatıcı</span>
+      <span class="muted" data-lang="en">Blood pressure log and medication reminders</span>
+    </div>
+  </div>
+
+  <div class="card" data-lang="tr">
+    <p style="margin-top:0">Tansiyon ölçümlerini saniyeler içinde kaydet, grafiklerle takip et, ilaçlarını zamanında hatırla ve doktorun için PDF rapor hazırla.
       Tüm verilerin yalnızca telefonunda saklanır.</p>
     <ul>
       <li>Büyük/küçük tansiyon, nabız, kol ve not ile ölçüm kaydı</li>
@@ -30,16 +39,26 @@
     <p class="muted">Bu uygulama bilgilendirme amaçlıdır; tıbbi teşhis veya tedavi önerisi sunmaz.</p>
   </div>
 
-  <div class="card">
-    <h2 style="margin-top:0">English</h2>
-    <p>Log your blood pressure in seconds, follow trends on clear charts, never miss a dose with medication reminders,
+  <div class="card" data-lang="en">
+    <p style="margin-top:0">Log your blood pressure in seconds, follow trends on clear charts, never miss a dose with medication reminders,
       and create a PDF report for your doctor. All your data stays on your phone.</p>
+    <ul>
+      <li>Systolic, diastolic, pulse, arm and notes for every reading</li>
+      <li>7-, 30- and 90-day trend charts and averages</li>
+      <li>Medication reminders with one-tap "Taken" from the notification</li>
+      <li>PDF report with preview, backup and restore</li>
+    </ul>
     <p class="muted">For information only; the app does not provide medical diagnosis or treatment advice.</p>
   </div>
 
-  <p><a href="privacy.html">Gizlilik Politikası · Privacy Policy</a></p>
+  <p>
+    <a href="privacy.html" data-lang="tr">Gizlilik Politikası</a>
+    <a href="privacy.html" data-lang="en">Privacy Policy</a>
+  </p>
 
-  <footer>© 2026 Pressure Diary · <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></footer>
+  <footer>© 2026 Pressure Diary ·
+    <span data-lang="tr">İletişim:</span><span data-lang="en">Contact:</span>
+    <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></footer>
 </main>
 </body>
 </html>

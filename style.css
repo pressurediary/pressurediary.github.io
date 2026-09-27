@@ -44,3 +44,13 @@ table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
 th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
 footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
 .card > ul { margin: 0; padding-left: 20px; }
+
+/* One language at a time (see lang.js) */
+html[lang="tr"] [data-lang="en"], html[lang="en"] [data-lang="tr"] { display: none !important; }
+.topbar { display: flex; justify-content: flex-end; margin-bottom: 16px; }
+.switch { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+.switch button {
+  font: inherit; font-size: 0.9rem; padding: 6px 14px; border: 0; cursor: pointer;
+  background: transparent; color: var(--muted);
+}
+.switch button[aria-pressed="true"] { background: var(--accent); color: #fff; }
