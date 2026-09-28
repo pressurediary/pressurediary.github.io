@@ -1,5 +1,10 @@
 <!doctype html>
-<html lang="tr" data-title-tr="Gizlilik Politikası — Tansiyon Takip" data-title-en="Privacy Policy — Pressure Diary">
+<html lang="tr" data-title-tr="Gizlilik Politikası — Tansiyon Takip" data-title-en="Privacy Policy — Pressure Diary"
+      data-title-de="Datenschutzerklärung – Blutdruck-Tagebuch"
+      data-title-es="Política de privacidad — Diario de Presión"
+      data-title-pt="Política de Privacidade — Diário de Pressão"
+      data-title-fr="Politique de confidentialité — Journal de Tension"
+      data-title-it="Informativa sulla privacy — Diario della Pressione">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,14 +15,24 @@
 <body>
 <main>
   <div class="topbar">
-    <div class="switch" role="group" aria-label="Language / Dil">
-      <button type="button" data-set-lang="tr">Türkçe</button>
-      <button type="button" data-set-lang="en">English</button>
-    </div>
+    <select class="lang-select" data-lang-select aria-label="Language / Dil">
+      <option value="tr">Türkçe</option>
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="fr">Français</option>
+      <option value="it">Italiano</option>
+    </select>
   </div>
-  <h1><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></h1>
+  <h1><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span><span data-lang="de">Datenschutzerklärung</span><span data-lang="es">Política de privacidad</span><span data-lang="pt">Política de Privacidade</span><span data-lang="fr">Politique de confidentialité</span><span data-lang="it">Informativa sulla privacy</span></h1>
   <p class="muted" data-lang="tr">Tansiyon Takip · Yürürlük tarihi: 28.09.2026</p>
   <p class="muted" data-lang="en">Pressure Diary · Effective date: 28 September 2026</p>
+  <p class="muted" data-lang="de">Blutdruck-Tagebuch · Gültig ab: 28. September 2026</p>
+  <p class="muted" data-lang="es">Diario de Presión · Fecha de entrada en vigor: 28 de septiembre de 2026</p>
+  <p class="muted" data-lang="pt">Diário de Pressão · Data de vigência: 28 de setembro de 2026</p>
+  <p class="muted" data-lang="fr">Journal de Tension · Date d’entrée en vigueur : 28 septembre 2026</p>
+  <p class="muted" data-lang="it">Diario della Pressione · Data di entrata in vigore: 28 settembre 2026</p>
 
   <!-- ===================================================== TÜRKÇE -->
   <section id="tr" data-lang="tr">
@@ -193,7 +208,435 @@
     <p>If this policy changes, the updated version will be published on this page with a new effective date. Significant changes will also be announced in the app.</p>
   </section>
 
-  <footer>© 2026 Pressure Diary · <a href="./"><span data-lang="tr">Ana sayfa</span><span data-lang="en">Home</span></a></footer>
+  <!-- ===================================================== DEUTSCH -->
+  <section id="de" data-lang="de">
+    <h2>Zusammenfassung</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Deine Gesundheitsdaten (Blutdruck, Puls, Medikamente, Notizen) werden ausschließlich auf deinem Handy gespeichert.</strong> Sie werden niemals an uns oder an einen Server gesendet.</li>
+        <li>Es ist kein Konto erforderlich; wir fragen nicht nach deinem Namen, deiner E-Mail-Adresse oder deiner Telefonnummer.</li>
+        <li>Die kostenlose Version zeigt <strong>nicht personalisierte</strong> Werbung von Google AdMob. Deine Gesundheitsdaten werden niemals an das Werbesystem weitergegeben.</li>
+        <li>Der Kauf „Werbung entfernen“ wird über Google Play oder den App Store abgewickelt; deine Zahlungsdaten sehen wir nie.</li>
+        <li>Wenn die App abstürzt, wird über Firebase Crashlytics ein <strong>rein technischer</strong> Absturzbericht gesendet. Du kannst dies in den Einstellungen deaktivieren.</li>
+      </ul>
+    </div>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>Entwickler und Verantwortlicher im Sinne des türkischen Gesetzes zum Schutz personenbezogener Daten (KVKK) und der EU-Datenschutz-Grundverordnung (DSGVO) ist
+      <strong>Kaan Onur</strong>, Türkiye. Kontakt: <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></p>
+
+    <h2>2. Daten, die du in der App eingibst</h2>
+    <p>Blutdruckmessungen, Puls, Notizen, Medikamentennamen, Dosierungen, Erinnerungszeiten und „Eingenommen/Ausgelassen“-Einträge werden ausschließlich in einer lokalen
+      Datenbank auf deinem Gerät gespeichert. Als Entwickler haben wir keinen Zugriff auf diese Daten und senden sie niemals an einen Server.</p>
+    <ul>
+      <li><strong>PDF-Berichte und Sicherungsdateien</strong> werden nur erstellt, wenn du sie anforderst, dir zuerst angezeigt und nur an das von dir gewählte Ziel geteilt
+        (z. B. E-Mail, Messaging-App, Cloud-Speicher). Was dort mit ihnen geschieht, richtet sich nach der Datenschutzerklärung des jeweiligen Dienstes.</li>
+      <li><strong>Benachrichtigungen:</strong> Medikamenten-, Nachfass- und Messerinnerungen sowie Hinweise auf einen zur Neige gehenden Vorrat werden lokal auf deinem Handy geplant; es ist kein Server beteiligt. Eine Benachrichtigung kann den Medikamentennamen und die Dosis anzeigen; in den Einstellungen deines Handys kannst du Benachrichtigungsinhalte auf dem Sperrbildschirm ausblenden.</li>
+      <li><strong>Startbildschirm-Widget (Android):</strong> Wenn du das Widget hinzufügst, werden deine letzte Messung und deine nächste Dosis auf deinem Startbildschirm angezeigt, wo jeder, der dein Handy sehen kann, sie lesen kann. Du kannst das Widget jederzeit entfernen. Auch diese Informationen bleiben ausschließlich auf deinem Gerät.</li>
+      <li><strong>App-Einstellungen</strong> (Sprache, Erinnerungszeiten, Annahme des Haftungsausschlusses, ob die Werbung entfernt wurde) werden auf deinem Gerät gespeichert.</li>
+    </ul>
+
+    <h2>3. Werbung (Google AdMob)</h2>
+    <p>Die kostenlose Version zeigt Bannerwerbung von Google AdMob am unteren Rand der Bildschirme „Messungen“ und „Einstellungen“.</p>
+    <ul>
+      <li>Die Werbung ist <strong>nicht personalisiert</strong>; wir verwenden kein interessenbasiertes Targeting.</li>
+      <li>Deine Gesundheitsdaten, Notizen und Medikamentenangaben werden <strong>niemals</strong> an das Werbesystem weitergegeben.</li>
+      <li>Google kann Geräte- und Nutzungsinformationen erfassen, um Werbung auszuliefern und zu messen sowie Betrug zu verhindern
+        (z. B. IP-Adresse, Gerätemodell und Betriebssystem, App-Version, Interaktionen mit Werbung, ungefährer Standort und unter Android die Werbe-ID).
+        Für diese Verarbeitung ist Google verantwortlich:
+        <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a> ·
+        <a href="https://policies.google.com/technologies/partner-sites">Wie Google Informationen aus Apps von Partnern verwendet</a>.</li>
+      <li>Nutzer im EWR, im Vereinigten Königreich und in der Schweiz werden vor der Anzeige von Werbung über das Einwilligungsformular von Google um ihre Einwilligung gebeten
+        und können ihre Auswahl unter Einstellungen &gt; „Datenschutz-Einstellungen für Werbung“ ändern.</li>
+      <li>Unter Android kannst du deine Werbe-ID in den Systemeinstellungen zurücksetzen oder löschen.</li>
+    </ul>
+
+    <h2>4. In-App-Kauf</h2>
+    <p>„Werbung entfernen“ ist ein einmaliger Kauf, der über Google Play oder den Apple App Store abgewickelt wird. Zahlungs- und Kontodaten werden vom Store verarbeitet;
+      wir sehen sie nie. Die App speichert auf deinem Gerät lediglich, dass der Kauf getätigt wurde, und kann dies mit „Käufe wiederherstellen“ erneut prüfen.</p>
+
+    <h2>5. Absturzberichte (Firebase Crashlytics)</h2>
+    <p>Um die App zu verbessern, wird ein Absturzbericht an den Dienst Firebase Crashlytics von Google gesendet, wenn die App abstürzt oder auf einen schwerwiegenden Fehler stößt.</p>
+    <ul>
+      <li>Der Bericht enthält <strong>ausschließlich technische Informationen</strong>: wo im Code der Fehler aufgetreten ist (Stacktrace), Gerätemodell, Betriebssystem und App-Version,
+        den Zeitpunkt des Absturzes und eine zufällig generierte Installations-ID. Während der Übermittlung des Berichts wird deine IP-Adresse verarbeitet.</li>
+      <li>Deine Messungen, Medikamente, Notizen oder sonstige Gesundheitsdaten sind <strong>niemals</strong> enthalten. Der Bericht wird nicht mit deinem Namen, deiner E-Mail-Adresse oder deiner Werbe-ID verknüpft.</li>
+      <li>Absturzberichte werden von Google als Auftragsverarbeiter verarbeitet, möglicherweise auf Servern außerhalb der Türkiye (z. B. in den USA); Crashlytics speichert sie etwa 90 Tage lang.
+        Details: <a href="https://firebase.google.com/support/privacy">Datenschutzinformationen zu Firebase</a>.</li>
+      <li>Rechtsgrundlage ist unser berechtigtes Interesse daran, die App zuverlässig zu halten.
+        Du kannst dies jederzeit unter Einstellungen &gt; „Absturzberichte senden“ deaktivieren.</li>
+    </ul>
+
+    <h2>6. Berechtigungen</h2>
+    <ul>
+      <li><strong>Benachrichtigungen:</strong> um Medikamenten- und Messerinnerungen anzuzeigen.</li>
+      <li><strong>Exakte Alarme (Android):</strong> damit Erinnerungen pünktlich eintreffen.</li>
+      <li><strong>Internet:</strong> nur zum Laden von Werbung, für Store-Käufe und für Absturzberichte. Deine Gesundheitsdaten werden nicht über das Internet gesendet.</li>
+    </ul>
+
+    <h2>7. Speicherdauer und Löschung</h2>
+    <p>Die Daten bleiben auf deinem Gerät, bis du sie löschst. Du kannst Messungen und Medikamente einzeln löschen oder alles auf einmal über Einstellungen &gt; „Alle Daten löschen“.
+      Durch die Deinstallation der App werden alle App-Daten auf dem Gerät dauerhaft gelöscht. Von dir exportierte Sicherungs- und PDF-Dateien bleiben dort, wo du sie gespeichert hast.</p>
+
+    <h2>8. Deine Rechte</h2>
+    <p>Nach dem KVKK und der DSGVO hast du das Recht auf Auskunft, Berichtigung und Löschung deiner personenbezogenen Daten sowie das Recht, der Verarbeitung zu widersprechen.
+      Da wir keine App-Daten auf unseren Servern speichern, können die meisten Anliegen direkt in der App erledigt werden.
+      Bei werbebezogenen Daten kannst du dich an Google wenden oder uns unter <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a> erreichen.</p>
+
+    <h2>9. Kinder</h2>
+    <p>Die App richtet sich nicht an Kinder unter 16 Jahren und erhebt nicht wissentlich Daten von Kindern.</p>
+
+    <h2>10. Medizinischer Haftungsausschluss</h2>
+    <p>Die App ist ausschließlich ein Werkzeug zum Protokollieren und Erinnern; sie bietet keine Diagnose- oder Behandlungsempfehlungen. Wende dich bei Fragen zu deiner Gesundheit immer an deinen Arzt.</p>
+
+    <h2>11. Änderungen</h2>
+    <p>Wenn sich diese Datenschutzerklärung ändert, wird die aktualisierte Fassung mit einem neuen Gültigkeitsdatum auf dieser Seite veröffentlicht. Wesentliche Änderungen werden zusätzlich in der App bekannt gegeben.</p>
+  </section>
+
+  <!-- ===================================================== ESPAÑOL -->
+  <section id="es" data-lang="es">
+    <h2>Resumen</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Tus datos de salud (presión arterial, pulso, medicamentos, notas) se guardan solo en tu teléfono.</strong> Nunca se envían a nosotros ni a ningún servidor.</li>
+        <li>No se necesita ninguna cuenta; no te pedimos tu nombre, correo electrónico ni número de teléfono.</li>
+        <li>La versión gratuita muestra anuncios <strong>no personalizados</strong> de Google AdMob. Tus datos de salud nunca se comparten con el sistema de anuncios.</li>
+        <li>La compra "Quitar anuncios" la gestiona Google Play o el App Store; nunca vemos tus datos de pago.</li>
+        <li>Si la app se cierra por un error, se envía a través de Firebase Crashlytics un informe de errores <strong>puramente técnico</strong>. Puedes desactivarlo en Ajustes.</li>
+      </ul>
+    </div>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <p>El desarrollador y responsable del tratamiento conforme a la Ley turca de Protección de Datos Personales (KVKK) y al Reglamento General de Protección de Datos (RGPD) de la UE es
+      <strong>Kaan Onur</strong>, Türkiye. Contacto: <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></p>
+
+    <h2>2. Datos que introduces en la app</h2>
+    <p>Las mediciones de presión arterial, el pulso, las notas, los nombres de los medicamentos, las dosis, las horas de recordatorio y los registros de "tomada/omitida" se guardan solo en una base de datos
+      local en tu dispositivo. Como desarrollador, no tenemos acceso a estos datos y nunca los enviamos a ningún servidor.</p>
+    <ul>
+      <li><strong>Los informes PDF y los archivos de copia de seguridad</strong> se crean solo cuando tú lo pides, primero se te muestran y se comparten únicamente con el destino que elijas
+        (p. ej., correo electrónico, app de mensajería, almacenamiento en la nube). Lo que ocurra con ellos allí se rige por la política de privacidad de ese servicio.</li>
+      <li><strong>Notificaciones:</strong> los recordatorios de medicamentos, de seguimiento y de medición, así como los avisos de "se está acabando", se programan localmente en tu teléfono; no interviene ningún servidor. Una notificación puede mostrar el nombre y la dosis del medicamento; puedes ocultar el contenido de las notificaciones en la pantalla de bloqueo desde los ajustes de tu teléfono.</li>
+      <li><strong>Widget de la pantalla de inicio (Android):</strong> si añades el widget, tu última medición y tu próxima dosis se muestran en la pantalla de inicio, donde cualquier persona que pueda ver tu teléfono puede leerlas. Puedes quitar el widget en cualquier momento. Esta información también se queda solo en tu dispositivo.</li>
+      <li><strong>Los ajustes de la app</strong> (idioma, horas de recordatorio, aceptación del aviso legal, si se quitaron los anuncios) se guardan en tu dispositivo.</li>
+    </ul>
+
+    <h2>3. Publicidad (Google AdMob)</h2>
+    <p>La versión gratuita muestra anuncios de banner de Google AdMob en la parte inferior de las pantallas Mediciones y Ajustes.</p>
+    <ul>
+      <li>Los anuncios son <strong>no personalizados</strong>; no utilizamos segmentación basada en intereses.</li>
+      <li>Tus datos de salud, notas y detalles de medicamentos <strong>nunca</strong> se transmiten al sistema de anuncios.</li>
+      <li>Google puede recopilar información del dispositivo y de uso para mostrar y medir anuncios y para prevenir el fraude
+        (p. ej., dirección IP, modelo del dispositivo y sistema operativo, versión de la app, interacciones con los anuncios, ubicación aproximada y, en Android, el ID de publicidad).
+        Este tratamiento es responsabilidad de Google:
+        <a href="https://policies.google.com/privacy">Política de privacidad de Google</a> ·
+        <a href="https://policies.google.com/technologies/partner-sites">Cómo utiliza Google la información de las apps de sus socios</a>.</li>
+      <li>A los usuarios del EEE, el Reino Unido y Suiza se les pide su consentimiento mediante el formulario de consentimiento de Google antes de mostrar anuncios,
+        y pueden cambiar su elección en Ajustes &gt; "Privacidad de anuncios".</li>
+      <li>En Android puedes restablecer o eliminar tu ID de publicidad en los ajustes del sistema.</li>
+    </ul>
+
+    <h2>4. Compra dentro de la app</h2>
+    <p>"Quitar anuncios" es una compra única procesada por Google Play o el Apple App Store. Los datos de pago y de la cuenta los gestiona la tienda;
+      nunca los vemos. La app solo guarda en tu dispositivo que se realizó la compra y puede volver a comprobarlo con "Restaurar compras".</p>
+
+    <h2>5. Informes de errores (Firebase Crashlytics)</h2>
+    <p>Para mejorar la app, se envía un informe de errores al servicio Firebase Crashlytics de Google cuando la app se cierra por un error o sufre un error grave.</p>
+    <ul>
+      <li>El informe contiene <strong>solo información técnica</strong>: en qué parte del código se produjo el error (traza de la pila), modelo del dispositivo, sistema operativo y versión de la app,
+        la hora del cierre y un ID de instalación generado aleatoriamente. Tu dirección IP se trata durante la transmisión del informe.</li>
+      <li>Tus mediciones, medicamentos, notas o cualquier otro dato de salud <strong>nunca</strong> se incluyen. El informe no se vincula a tu nombre, correo electrónico ni ID de publicidad.</li>
+      <li>Google trata los informes de errores como encargado del tratamiento, posiblemente en servidores fuera de Türkiye (p. ej., en EE. UU.); Crashlytics los conserva unos 90 días.
+        Detalles: <a href="https://firebase.google.com/support/privacy">Información de privacidad de Firebase</a>.</li>
+      <li>La base jurídica es nuestro interés legítimo en mantener la fiabilidad de la app.
+        Puedes desactivarlo en cualquier momento en Ajustes &gt; "Enviar informes de errores".</li>
+    </ul>
+
+    <h2>6. Permisos</h2>
+    <ul>
+      <li><strong>Notificaciones:</strong> para mostrar los recordatorios de medicamentos y de medición.</li>
+      <li><strong>Alarmas exactas (Android):</strong> para que los recordatorios lleguen a tiempo.</li>
+      <li><strong>Internet:</strong> solo para cargar anuncios, para las compras en la tienda y para los informes de errores. Tus datos de salud no se envían por internet.</li>
+    </ul>
+
+    <h2>7. Conservación y eliminación</h2>
+    <p>Los datos permanecen en tu dispositivo hasta que los eliminas. Puedes eliminar mediciones y medicamentos uno por uno, o todo a la vez con Ajustes &gt; "Eliminar todos los datos".
+      Al desinstalar la app se eliminan de forma permanente todos los datos de la app en el dispositivo. Los archivos de copia de seguridad y PDF que hayas exportado permanecen donde los guardaste.</p>
+
+    <h2>8. Tus derechos</h2>
+    <p>Conforme a la KVKK y el RGPD, tienes derecho a acceder a tus datos personales, rectificarlos, suprimirlos y oponerte a su tratamiento.
+      Como no guardamos los datos de la app en nuestros servidores, la mayoría de las solicitudes pueden atenderse directamente en la app.
+      Para los datos relacionados con los anuncios puedes contactar con Google, o escribirnos a <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a>.</p>
+
+    <h2>9. Menores</h2>
+    <p>La app no está dirigida a menores de 16 años y no recopila a sabiendas datos de menores.</p>
+
+    <h2>10. Aviso médico</h2>
+    <p>La app es solo una herramienta de registro y recordatorios; no ofrece diagnóstico ni consejos de tratamiento. Consulta siempre a tu médico sobre tu salud.</p>
+
+    <h2>11. Cambios</h2>
+    <p>Si esta política cambia, la versión actualizada se publicará en esta página con una nueva fecha de entrada en vigor. Los cambios importantes también se anunciarán en la app.</p>
+  </section>
+
+
+  <!-- ===================================================== PORTUGUÊS -->
+  <section id="pt" data-lang="pt">
+    <h2>Resumo</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Seus dados de saúde (pressão arterial, pulso, medicamentos, anotações) são armazenados apenas no seu celular.</strong> Eles nunca são enviados para nós nem para nenhum servidor.</li>
+        <li>Não é necessário criar uma conta; não pedimos seu nome, e-mail ou número de telefone.</li>
+        <li>A versão gratuita exibe anúncios <strong>não personalizados</strong> do Google AdMob. Seus dados de saúde nunca são compartilhados com o sistema de anúncios.</li>
+        <li>A compra "Remover anúncios" é processada pelo Google Play ou pela App Store; nunca vemos seus dados de pagamento.</li>
+        <li>Se o app travar, um relatório de erro <strong>puramente técnico</strong> é enviado pelo Firebase Crashlytics. Você pode desativar isso em Ajustes.</li>
+      </ul>
+    </div>
+
+    <h2>1. Controlador dos dados</h2>
+    <p>O desenvolvedor e controlador dos dados nos termos da Lei de Proteção de Dados Pessoais da Turquia (KVKK) e do Regulamento Geral sobre a Proteção de Dados (RGPD) da União Europeia é
+      <strong>Kaan Onur</strong>, Türkiye. Contato: <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></p>
+
+    <h2>2. Dados que você insere no app</h2>
+    <p>Medições de pressão arterial, pulso, anotações, nomes de medicamentos, doses, horários de lembretes e registros de "tomado/pulado" são mantidos apenas em um banco de dados
+      local no seu aparelho. Como desenvolvedor, não temos acesso a esses dados e nunca os enviamos para nenhum servidor.</p>
+    <ul>
+      <li><strong>Relatórios em PDF e arquivos de backup</strong> são criados somente quando você os solicita, mostrados primeiro a você e compartilhados apenas com o destino que você escolher
+        (por exemplo, e-mail, app de mensagens, armazenamento em nuvem). O que acontece com eles nesse destino é regido pela política de privacidade desse serviço.</li>
+      <li><strong>Notificações:</strong> os lembretes de medicamentos, de acompanhamento e de medição, bem como os alertas de "estoque acabando", são agendados localmente no seu celular; nenhum servidor é envolvido. Uma notificação pode mostrar o nome e a dose do medicamento; você pode ocultar o conteúdo das notificações na tela de bloqueio nas configurações do seu celular.</li>
+      <li><strong>Widget da tela inicial (Android):</strong> se você adicionar o widget, sua última medição e sua próxima dose serão exibidas na tela inicial, onde qualquer pessoa que possa ver seu celular poderá lê-las. Você pode remover o widget a qualquer momento. Essas informações também ficam apenas no seu aparelho.</li>
+      <li><strong>Configurações do app</strong> (idioma, horários dos lembretes, aceitação do aviso, se os anúncios foram removidos) são armazenadas no seu aparelho.</li>
+    </ul>
+
+    <h2>3. Publicidade (Google AdMob)</h2>
+    <p>A versão gratuita exibe anúncios em banner do Google AdMob na parte inferior das telas Medições e Ajustes.</p>
+    <ul>
+      <li>Os anúncios são <strong>não personalizados</strong>; não usamos segmentação baseada em interesses.</li>
+      <li>Seus dados de saúde, anotações e detalhes de medicamentos <strong>nunca</strong> são repassados ao sistema de anúncios.</li>
+      <li>O Google pode coletar informações do dispositivo e de uso para exibir e medir anúncios e para prevenir fraudes
+        (por exemplo, endereço IP, modelo do aparelho e sistema operacional, versão do app, interações com anúncios, localização aproximada e, no Android, o ID de publicidade).
+        Esse tratamento é de responsabilidade do Google:
+        <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> ·
+        <a href="https://policies.google.com/technologies/partner-sites">Como o Google usa informações de apps de parceiros</a>.</li>
+      <li>Os usuários no EEE, no Reino Unido e na Suíça recebem um pedido de consentimento por meio do formulário de consentimento do Google antes que os anúncios sejam exibidos,
+        e podem alterar sua escolha em Ajustes &gt; "Privacidade dos anúncios".</li>
+      <li>No Android, você pode redefinir ou excluir seu ID de publicidade nas configurações do sistema.</li>
+    </ul>
+
+    <h2>4. Compra no app</h2>
+    <p>"Remover anúncios" é uma compra única processada pelo Google Play ou pela Apple App Store. Os dados de pagamento e da conta são tratados pela loja;
+      nunca os vemos. O app apenas armazena no seu aparelho que a compra foi feita e pode verificá-la novamente com "Restaurar compras".</p>
+
+    <h2>5. Relatórios de erros (Firebase Crashlytics)</h2>
+    <p>Para melhorar o app, um relatório de erro é enviado ao serviço Firebase Crashlytics do Google quando o app trava ou encontra um erro grave.</p>
+    <ul>
+      <li>O relatório contém <strong>apenas informações técnicas</strong>: em que ponto do código o erro ocorreu (stack trace), modelo do aparelho, sistema operacional e versão do app,
+        o horário da falha e um ID de instalação gerado aleatoriamente. Seu endereço IP é tratado durante a transmissão do relatório.</li>
+      <li>Suas medições, medicamentos, anotações ou quaisquer outros dados de saúde <strong>nunca</strong> são incluídos. O relatório não é vinculado ao seu nome, e-mail ou ID de publicidade.</li>
+      <li>Os relatórios de erros são tratados pelo Google na qualidade de operador de dados, possivelmente em servidores fora da Türkiye (por exemplo, nos EUA); o Crashlytics os mantém por cerca de 90 dias.
+        Detalhes: <a href="https://firebase.google.com/support/privacy">Informações de privacidade do Firebase</a>.</li>
+      <li>A base legal é nosso legítimo interesse em manter o app confiável.
+        Você pode desativar isso a qualquer momento em Ajustes &gt; "Enviar relatórios de erros".</li>
+    </ul>
+
+    <h2>6. Permissões</h2>
+    <ul>
+      <li><strong>Notificações:</strong> para exibir lembretes de medicamentos e de medição.</li>
+      <li><strong>Alarmes exatos (Android):</strong> para que os lembretes cheguem na hora certa.</li>
+      <li><strong>Internet:</strong> apenas para carregar anúncios, para compras na loja e para relatórios de erros. Seus dados de saúde não são enviados pela internet.</li>
+    </ul>
+
+    <h2>7. Retenção e exclusão</h2>
+    <p>Os dados permanecem no seu aparelho até que você os exclua. Você pode excluir medições e medicamentos um por um, ou tudo de uma vez em Ajustes &gt; "Excluir todos os dados".
+      Desinstalar o app exclui permanentemente todos os dados do app no aparelho. Os arquivos de backup e PDF que você exportou permanecem onde você os salvou.</p>
+
+    <h2>8. Seus direitos</h2>
+    <p>Nos termos da KVKK e do RGPD, você tem o direito de acessar, retificar e apagar seus dados pessoais e de se opor ao seu tratamento.
+      Como não mantemos dados do app em nossos servidores, a maioria das solicitações pode ser atendida diretamente no app.
+      Para dados relacionados a anúncios, você pode entrar em contato com o Google ou falar conosco em <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a>.</p>
+
+    <h2>9. Crianças</h2>
+    <p>O app não é direcionado a crianças menores de 16 anos e não coleta intencionalmente dados de crianças.</p>
+
+    <h2>10. Aviso médico</h2>
+    <p>O app é apenas uma ferramenta de registro e lembretes; ele não fornece diagnóstico nem orientação de tratamento. Sempre consulte seu médico sobre sua saúde.</p>
+
+    <h2>11. Alterações</h2>
+    <p>Se esta política for alterada, a versão atualizada será publicada nesta página com uma nova data de vigência. Alterações significativas também serão comunicadas no app.</p>
+  </section>
+
+  <!-- ===================================================== FRANÇAIS -->
+  <section id="fr" data-lang="fr">
+    <h2>Résumé</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Vos données de santé (tension artérielle, pouls, médicaments, notes) sont enregistrées uniquement sur votre téléphone.</strong> Elles ne nous sont jamais envoyées, ni à aucun serveur.</li>
+        <li>Aucun compte n’est nécessaire ; nous ne vous demandons ni votre nom, ni votre adresse e-mail, ni votre numéro de téléphone.</li>
+        <li>La version gratuite affiche des publicités <strong>non personnalisées</strong> de Google AdMob. Vos données de santé ne sont jamais partagées avec le système publicitaire.</li>
+        <li>L’achat « Supprimer les publicités » est géré par Google Play ou l’App Store ; nous ne voyons jamais vos informations de paiement.</li>
+        <li>En cas de plantage de l’application, un rapport de plantage <strong>purement technique</strong> est envoyé via Firebase Crashlytics. Vous pouvez désactiver cette fonction dans les Réglages.</li>
+      </ul>
+    </div>
+
+    <h2>1. Responsable du traitement</h2>
+    <p>Le développeur et responsable du traitement au sens de la loi turque sur la protection des données personnelles (KVKK) et du Règlement général sur la protection des données de l’UE (RGPD) est
+      <strong>Kaan Onur</strong>, Türkiye. Contact : <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></p>
+
+    <h2>2. Données que vous saisissez dans l’application</h2>
+    <p>Les mesures de tension artérielle, le pouls, les notes, les noms des médicaments, les doses, les heures de rappel et les enregistrements « pris/ignoré » sont conservés uniquement dans une base de données
+      locale sur votre appareil. En tant que développeur, nous n’avons pas accès à ces données et ne les envoyons jamais à aucun serveur.</p>
+    <ul>
+      <li><strong>Les rapports PDF et les fichiers de sauvegarde</strong> sont créés uniquement lorsque vous le demandez, vous sont d’abord présentés, et ne sont partagés qu’avec la destination que vous choisissez
+        (par ex. e-mail, application de messagerie, stockage en ligne). Leur traitement à cet endroit est régi par la politique de confidentialité de ce service.</li>
+      <li><strong>Notifications :</strong> les rappels de médicaments, de relance et de mesure ainsi que les alertes « stock bientôt épuisé » sont programmés localement sur votre téléphone ; aucun serveur n’intervient. Une notification peut afficher le nom et la dose du médicament ; vous pouvez masquer le contenu des notifications sur l’écran de verrouillage dans les réglages de votre téléphone.</li>
+      <li><strong>Widget d’écran d’accueil (Android) :</strong> si vous ajoutez le widget, votre dernière mesure et votre prochaine prise sont affichées sur votre écran d’accueil, où toute personne pouvant voir votre téléphone peut les lire. Vous pouvez retirer le widget à tout moment. Ces informations restent elles aussi uniquement sur votre appareil.</li>
+      <li><strong>Les paramètres de l’application</strong> (langue, heures de rappel, acceptation de l’avertissement, suppression ou non des publicités) sont enregistrés sur votre appareil.</li>
+    </ul>
+
+    <h2>3. Publicité (Google AdMob)</h2>
+    <p>La version gratuite affiche des bannières publicitaires de Google AdMob en bas des écrans Mesures et Réglages.</p>
+    <ul>
+      <li>Les publicités sont <strong>non personnalisées</strong> ; nous n’utilisons pas de ciblage basé sur les centres d’intérêt.</li>
+      <li>Vos données de santé, vos notes et les informations sur vos médicaments ne sont <strong>jamais</strong> transmises au système publicitaire.</li>
+      <li>Google peut collecter des informations sur l’appareil et son utilisation afin de diffuser et de mesurer les publicités et de prévenir la fraude
+        (par ex. adresse IP, modèle d’appareil et système d’exploitation, version de l’application, interactions avec les publicités, position approximative et, sur Android, l’identifiant publicitaire).
+        Ce traitement relève de la responsabilité de Google :
+        <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a> ·
+        <a href="https://policies.google.com/technologies/partner-sites">Comment Google utilise les informations des applications partenaires</a>.</li>
+      <li>Les utilisateurs de l’EEE, du Royaume-Uni et de Suisse sont invités à donner leur consentement via le formulaire de consentement de Google avant l’affichage des publicités,
+        et peuvent modifier leur choix dans Réglages &gt; « Choix de confidentialité publicitaire ».</li>
+      <li>Sur Android, vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres du système.</li>
+    </ul>
+
+    <h2>4. Achat intégré</h2>
+    <p>« Supprimer les publicités » est un achat unique traité par Google Play ou l’App Store d’Apple. Les informations de paiement et de compte sont gérées par la boutique ;
+      nous ne les voyons jamais. L’application enregistre uniquement sur votre appareil que l’achat a été effectué et peut le vérifier à nouveau avec « Restaurer les achats ».</p>
+
+    <h2>5. Rapports de plantage (Firebase Crashlytics)</h2>
+    <p>Afin d’améliorer l’application, un rapport de plantage est envoyé au service Firebase Crashlytics de Google lorsque l’application plante ou rencontre une erreur grave.</p>
+    <ul>
+      <li>Le rapport contient <strong>uniquement des informations techniques</strong> : l’endroit du code où l’erreur s’est produite (trace d’appels), le modèle d’appareil, le système d’exploitation et la version de l’application,
+        l’heure du plantage et un identifiant d’installation généré aléatoirement. Votre adresse IP est traitée lors de la transmission du rapport.</li>
+      <li>Vos mesures, médicaments, notes ou toute autre donnée de santé n’y sont <strong>jamais</strong> inclus. Le rapport n’est lié ni à votre nom, ni à votre adresse e-mail, ni à votre identifiant publicitaire.</li>
+      <li>Les rapports de plantage sont traités par Google en tant que sous-traitant, éventuellement sur des serveurs situés hors de Türkiye (par ex. aux États-Unis) ; Crashlytics les conserve environ 90 jours.
+        Détails : <a href="https://firebase.google.com/support/privacy">Informations de Firebase sur la confidentialité</a>.</li>
+      <li>La base juridique est notre intérêt légitime à assurer la fiabilité de l’application.
+        Vous pouvez désactiver cette fonction à tout moment dans Réglages &gt; « Envoyer les rapports de plantage ».</li>
+    </ul>
+
+    <h2>6. Autorisations</h2>
+    <ul>
+      <li><strong>Notifications :</strong> pour afficher les rappels de médicaments et de mesure.</li>
+      <li><strong>Alarmes exactes (Android) :</strong> pour que les rappels arrivent à l’heure.</li>
+      <li><strong>Internet :</strong> uniquement pour charger les publicités, pour les achats dans la boutique et pour les rapports de plantage. Vos données de santé ne sont pas envoyées par Internet.</li>
+    </ul>
+
+    <h2>7. Conservation et suppression</h2>
+    <p>Les données restent sur votre appareil jusqu’à ce que vous les supprimiez. Vous pouvez supprimer les mesures et les médicaments un par un, ou tout à la fois avec Réglages &gt; « Supprimer toutes les données ».
+      La désinstallation de l’application supprime définitivement toutes les données de l’application sur l’appareil. Les fichiers de sauvegarde et PDF que vous avez exportés restent à l’endroit où vous les avez enregistrés.</p>
+
+    <h2>8. Vos droits</h2>
+    <p>En vertu de la KVKK et du RGPD, vous disposez d’un droit d’accès, de rectification et d’effacement de vos données personnelles, ainsi que d’un droit d’opposition à leur traitement.
+      Comme nous ne conservons pas les données de l’application sur nos serveurs, la plupart des demandes peuvent être satisfaites directement dans l’application.
+      Pour les données liées à la publicité, vous pouvez contacter Google, ou nous joindre à l’adresse <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a>.</p>
+
+    <h2>9. Enfants</h2>
+    <p>L’application ne s’adresse pas aux enfants de moins de 16 ans et ne collecte pas sciemment de données auprès d’enfants.</p>
+
+    <h2>10. Avertissement médical</h2>
+    <p>L’application est uniquement un outil de suivi et de rappel ; elle ne fournit ni diagnostic ni conseil de traitement. Consultez toujours votre médecin au sujet de votre santé.</p>
+
+    <h2>11. Modifications</h2>
+    <p>Si cette politique est modifiée, la version mise à jour sera publiée sur cette page avec une nouvelle date d’entrée en vigueur. Les modifications importantes seront également annoncées dans l’application.</p>
+  </section>
+
+
+  <!-- ===================================================== ITALIANO -->
+  <section id="it" data-lang="it">
+    <h2>In sintesi</h2>
+    <div class="card">
+      <ul>
+        <li><strong>I tuoi dati sanitari (pressione arteriosa, battito cardiaco, farmaci, note) sono salvati solo sul tuo telefono.</strong> Non vengono mai inviati a noi né ad alcun server.</li>
+        <li>Non è necessario alcun account; non ti chiediamo nome, indirizzo email o numero di telefono.</li>
+        <li>La versione gratuita mostra annunci <strong>non personalizzati</strong> di Google AdMob. I tuoi dati sanitari non vengono mai condivisi con il sistema pubblicitario.</li>
+        <li>L’acquisto “Rimuovi pubblicità” è gestito da Google Play o dall’App Store; non vediamo mai i tuoi dati di pagamento.</li>
+        <li>Se l’app si arresta in modo anomalo, viene inviata tramite Firebase Crashlytics una segnalazione di arresto anomalo <strong>puramente tecnica</strong>. Puoi disattivarla nelle Impostazioni.</li>
+      </ul>
+    </div>
+
+    <h2>1. Titolare del trattamento</h2>
+    <p>Lo sviluppatore e titolare del trattamento ai sensi della legge turca sulla protezione dei dati personali (KVKK) e del Regolamento generale sulla protezione dei dati dell’UE (GDPR) è
+      <strong>Kaan Onur</strong>, Türkiye. Contatto: <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></p>
+
+    <h2>2. Dati che inserisci nell’app</h2>
+    <p>Le misurazioni della pressione arteriosa, il battito cardiaco, le note, i nomi dei farmaci, le dosi, gli orari dei promemoria e le registrazioni “presa/saltata” sono conservati solo in un database
+      locale sul tuo dispositivo. In qualità di sviluppatore non abbiamo accesso a questi dati e non li inviamo mai ad alcun server.</p>
+    <ul>
+      <li><strong>I report PDF e i file di backup</strong> vengono creati solo quando li richiedi, ti vengono mostrati prima e vengono condivisi solo con la destinazione che scegli
+        (ad es. email, app di messaggistica, archiviazione cloud). Ciò che accade loro lì è disciplinato dall’informativa sulla privacy di quel servizio.</li>
+      <li><strong>Notifiche:</strong> i promemoria per i farmaci, i promemoria di follow-up e di misurazione e gli avvisi di “scorta in esaurimento” sono programmati localmente sul tuo telefono; non è coinvolto alcun server. Una notifica può mostrare il nome e la dose del farmaco; puoi nascondere il contenuto delle notifiche nella schermata di blocco dalle impostazioni del telefono.</li>
+      <li><strong>Widget della schermata Home (Android):</strong> se aggiungi il widget, l’ultima misurazione e la prossima dose vengono mostrate nella schermata Home, dove chiunque possa vedere il tuo telefono può leggerle. Puoi rimuovere il widget in qualsiasi momento. Anche queste informazioni restano solo sul tuo dispositivo.</li>
+      <li><strong>Le impostazioni dell’app</strong> (lingua, orari dei promemoria, accettazione dell’avvertenza, eventuale rimozione della pubblicità) sono salvate sul tuo dispositivo.</li>
+    </ul>
+
+    <h2>3. Pubblicità (Google AdMob)</h2>
+    <p>La versione gratuita mostra banner pubblicitari di Google AdMob nella parte inferiore delle schermate Misurazioni e Impostazioni.</p>
+    <ul>
+      <li>Gli annunci sono <strong>non personalizzati</strong>; non utilizziamo il targeting basato sugli interessi.</li>
+      <li>I tuoi dati sanitari, le note e i dettagli dei farmaci non vengono <strong>mai</strong> trasmessi al sistema pubblicitario.</li>
+      <li>Google può raccogliere informazioni sul dispositivo e sull’utilizzo per pubblicare e misurare gli annunci e prevenire le frodi
+        (ad es. indirizzo IP, modello del dispositivo e sistema operativo, versione dell’app, interazioni con gli annunci, posizione approssimativa e, su Android, l’ID pubblicità).
+        Questo trattamento è di responsabilità di Google:
+        <a href="https://policies.google.com/privacy">Norme sulla privacy di Google</a> ·
+        <a href="https://policies.google.com/technologies/partner-sites">Come Google utilizza le informazioni dei siti o delle app che utilizzano i suoi servizi</a>.</li>
+      <li>Agli utenti nello SEE, nel Regno Unito e in Svizzera viene chiesto il consenso tramite il modulo di consenso di Google prima che vengano mostrati annunci,
+        e possono modificare la propria scelta in Impostazioni &gt; “Scelte sulla privacy degli annunci”.</li>
+      <li>Su Android puoi reimpostare o eliminare il tuo ID pubblicità nelle impostazioni di sistema.</li>
+    </ul>
+
+    <h2>4. Acquisto in-app</h2>
+    <p>“Rimuovi pubblicità” è un acquisto unico elaborato da Google Play o dall’Apple App Store. I dati di pagamento e dell’account sono gestiti dallo store;
+      non li vediamo mai. L’app salva sul tuo dispositivo solo il fatto che l’acquisto è stato effettuato e può verificarlo di nuovo con “Ripristina acquisti”.</p>
+
+    <h2>5. Segnalazioni di arresto anomalo (Firebase Crashlytics)</h2>
+    <p>Per migliorare l’app, quando l’app si arresta in modo anomalo o incontra un errore grave viene inviata una segnalazione di arresto anomalo al servizio Firebase Crashlytics di Google.</p>
+    <ul>
+      <li>La segnalazione contiene <strong>solo informazioni tecniche</strong>: il punto del codice in cui si è verificato l’errore (stack trace), il modello del dispositivo, il sistema operativo e la versione dell’app,
+        l’ora dell’arresto anomalo e un ID di installazione generato casualmente. Il tuo indirizzo IP viene trattato durante la trasmissione della segnalazione.</li>
+      <li>Le tue misurazioni, i farmaci, le note o qualsiasi altro dato sanitario non vengono <strong>mai</strong> inclusi. La segnalazione non è collegata al tuo nome, al tuo indirizzo email o al tuo ID pubblicità.</li>
+      <li>Le segnalazioni di arresto anomalo sono trattate da Google in qualità di responsabile del trattamento, eventualmente su server situati al di fuori della Türkiye (ad es. negli USA); Crashlytics le conserva per circa 90 giorni.
+        Dettagli: <a href="https://firebase.google.com/support/privacy">Informazioni sulla privacy di Firebase</a>.</li>
+      <li>La base giuridica è il nostro legittimo interesse a mantenere l’app affidabile.
+        Puoi disattivarle in qualsiasi momento in Impostazioni &gt; “Invia segnalazioni di arresto anomalo”.</li>
+    </ul>
+
+    <h2>6. Autorizzazioni</h2>
+    <ul>
+      <li><strong>Notifiche:</strong> per mostrare i promemoria dei farmaci e delle misurazioni.</li>
+      <li><strong>Sveglie esatte (Android):</strong> affinché i promemoria arrivino puntuali.</li>
+      <li><strong>Internet:</strong> solo per caricare gli annunci, per gli acquisti nello store e per le segnalazioni di arresto anomalo. I tuoi dati sanitari non vengono inviati tramite Internet.</li>
+    </ul>
+
+    <h2>7. Conservazione ed eliminazione</h2>
+    <p>I dati restano sul tuo dispositivo finché non li elimini. Puoi eliminare le misurazioni e i farmaci uno per uno, oppure tutto in una volta con Impostazioni &gt; “Elimina tutti i dati”.
+      La disinstallazione dell’app elimina definitivamente tutti i dati dell’app sul dispositivo. I file di backup e PDF che hai esportato restano ovunque tu li abbia salvati.</p>
+
+    <h2>8. I tuoi diritti</h2>
+    <p>Ai sensi della KVKK e del GDPR hai il diritto di accedere ai tuoi dati personali, di rettificarli, di cancellarli e di opporti al loro trattamento.
+      Poiché non conserviamo i dati dell’app sui nostri server, la maggior parte delle richieste può essere soddisfatta direttamente nell’app.
+      Per i dati relativi alla pubblicità puoi contattare Google, oppure scriverci a <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a>.</p>
+
+    <h2>9. Minori</h2>
+    <p>L’app non è rivolta ai minori di 16 anni e non raccoglie consapevolmente dati di minori.</p>
+
+    <h2>10. Avvertenza medica</h2>
+    <p>L’app è esclusivamente uno strumento di registrazione e promemoria; non fornisce diagnosi né consigli terapeutici. Consulta sempre il tuo medico per la tua salute.</p>
+
+    <h2>11. Modifiche</h2>
+    <p>Se la presente informativa viene modificata, la versione aggiornata sarà pubblicata su questa pagina con una nuova data di entrata in vigore. Le modifiche significative saranno inoltre comunicate nell’app.</p>
+  </section>
+
+
+  <footer>© 2026 Pressure Diary · <a href="./"><span data-lang="tr">Ana sayfa</span><span data-lang="en">Home</span><span data-lang="de">Startseite</span><span data-lang="es">Inicio</span><span data-lang="pt">Início</span><span data-lang="fr">Accueil</span><span data-lang="it">Home</span></a></footer>
 </main>
 </body>
 </html>

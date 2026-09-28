@@ -1,29 +1,34 @@
 // Shows one language at a time. Order of preference:
-// ?lang=tr|en in the URL, the visitor's last choice, then the browser language.
+// ?lang=xx in the URL, the visitor's last choice, then the browser languages.
 (function () {
-  var supported = ['tr', 'en'];
+  var supported = ['tr', 'en', 'de', 'es', 'pt', 'fr', 'it'];
+  function ok(code) { return supported.indexOf(code) >= 0 ? code : null; }
   function pick() {
-    var q = new URLSearchParams(location.search).get('lang');
-    if (supported.indexOf(q) >= 0) return q;
+    var q = ok(new URLSearchParams(location.search).get('lang'));
+    if (q) return q;
     try {
-      var saved = localStorage.getItem('lang');
-      if (supported.indexOf(saved) >= 0) return saved;
+      var saved = ok(localStorage.getItem('lang'));
+      if (saved) return saved;
     } catch (e) {}
-    return (navigator.language || 'en').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+    var prefs = navigator.languages || [navigator.language || 'en'];
+    for (var i = 0; i < prefs.length; i++) {
+      var code = ok((prefs[i] || '').toLowerCase().split('-')[0]);
+      if (code) return code;
+    }
+    return 'en';
   }
   function apply(lang) {
     document.documentElement.lang = lang;
     var t = document.documentElement.getAttribute('data-title-' + lang);
     if (t) document.title = t;
-    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
-      b.setAttribute('aria-pressed', b.getAttribute('data-set-lang') === lang ? 'true' : 'false');
-    });
+    document.querySelectorAll('[data-lang-select]').forEach(function (s) { s.value = lang; });
   }
+  // Set the language before first paint where possible (script is deferred, so
+  // the CSS hides other languages as soon as <html lang> changes).
   apply(pick());
-  document.addEventListener('click', function (e) {
-    var b = e.target.closest('[data-set-lang]');
-    if (!b) return;
-    var lang = b.getAttribute('data-set-lang');
+  document.addEventListener('change', function (e) {
+    if (!e.target.matches('[data-lang-select]')) return;
+    var lang = ok(e.target.value) || 'en';
     try { localStorage.setItem('lang', lang); } catch (err) {}
     apply(lang);
   });

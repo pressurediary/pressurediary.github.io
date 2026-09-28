@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="tr" data-title-tr="Tansiyon Takip · Tansiyon günlüğü ve ilaç hatırlatıcı"
-      data-title-en="Pressure Diary · Blood pressure log and medication reminders">
+      data-title-en="Pressure Diary · Blood pressure log and medication reminders"
+      data-title-de="Blutdruck-Tagebuch · Blutdruck-Protokoll und Medikamentenerinnerungen"
+      data-title-es="Diario de Presión · Registro de presión arterial y recordatorios de medicamentos"
+      data-title-pt="Diário de Pressão · Registro de pressão arterial e lembretes de medicamentos"
+      data-title-fr="Journal de Tension · Suivi de la tension artérielle et rappels de médicaments"
+      data-title-it="Diario della Pressione · Registro della pressione arteriosa e promemoria dei farmaci">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,18 +17,28 @@
 <body>
 <main>
   <div class="topbar">
-    <div class="switch" role="group" aria-label="Language / Dil">
-      <button type="button" data-set-lang="tr">Türkçe</button>
-      <button type="button" data-set-lang="en">English</button>
-    </div>
+    <select class="lang-select" data-lang-select aria-label="Language / Dil">
+      <option value="tr">Türkçe</option>
+      <option value="en">English</option>
+      <option value="de">Deutsch</option>
+      <option value="es">Español</option>
+      <option value="pt">Português</option>
+      <option value="fr">Français</option>
+      <option value="it">Italiano</option>
+    </select>
   </div>
 
   <div class="app">
     <img src="icon.png" alt="">
     <div>
-      <h1><span data-lang="tr">Tansiyon Takip</span><span data-lang="en">Pressure Diary</span></h1>
+      <h1><span data-lang="tr">Tansiyon Takip</span><span data-lang="en">Pressure Diary</span><span data-lang="de">Blutdruck-Tagebuch</span><span data-lang="es">Diario de Presión</span><span data-lang="pt">Diário de Pressão</span><span data-lang="fr">Journal de Tension</span><span data-lang="it">Diario della Pressione</span></h1>
       <span class="muted" data-lang="tr">Tansiyon günlüğü ve ilaç hatırlatıcı</span>
       <span class="muted" data-lang="en">Blood pressure log and medication reminders</span>
+      <span class="muted" data-lang="de">Blutdruck-Protokoll und Medikamentenerinnerungen</span>
+      <span class="muted" data-lang="es">Registro de presión arterial y recordatorios de medicamentos</span>
+      <span class="muted" data-lang="pt">Registro de pressão arterial e lembretes de medicamentos</span>
+      <span class="muted" data-lang="fr">Suivi de la tension artérielle et rappels de médicaments</span>
+      <span class="muted" data-lang="it">Registro della pressione arteriosa e promemoria dei farmaci</span>
     </div>
   </div>
 
@@ -61,13 +76,103 @@
     <p class="muted">For information only; the app does not provide medical diagnosis or treatment advice.</p>
   </div>
 
+  <div class="card" data-lang="de">
+    <p style="margin-top:0">Erfasse deinen Blutdruck in Sekunden, verfolge Trends in übersichtlichen Diagrammen, verpasse dank Medikamentenerinnerungen keine Dosis mehr
+      und erstelle einen PDF-Bericht für deinen Arzt. Alle deine Daten bleiben auf deinem Handy.</p>
+    <ul>
+      <li>Systolisch, diastolisch, Puls, Arm und Notizen für jede Messung; Messungen später bearbeiten</li>
+      <li>Trenddiagramme und Durchschnittswerte über 7, 30 und 90 Tage</li>
+      <li>Medikamentenerinnerungen mit „Eingenommen“, „In 10 Min. erinnern“ oder „Auslassen“ per Fingertipp direkt aus der Benachrichtigung</li>
+      <li>Eine zweite Erinnerung 30 Minuten später, wenn eine Dosis noch unbeantwortet ist</li>
+      <li>Tablettenvorrat verfolgen, mit Nachkauf-Erinnerung, bevor er aufgebraucht ist</li>
+      <li>Erinnerungen morgens und abends: „Miss deinen Blutdruck“</li>
+      <li>Startbildschirm-Widget: letzte Messung und nächste Dosis auf einen Blick (Android)</li>
+      <li>PDF-Bericht mit Vorschau, Sicherung und Wiederherstellung</li>
+      <li>Verfügbar auf Englisch, Türkisch, Deutsch, Spanisch, Portugiesisch, Französisch und Italienisch</li>
+    </ul>
+    <p class="muted">Nur zu Informationszwecken; die App bietet keine medizinische Diagnose oder Behandlungsempfehlung.</p>
+  </div>
+
+  <div class="card" data-lang="es">
+    <p style="margin-top:0">Registra tu presión arterial en segundos, sigue su evolución en gráficos claros, no te saltes ninguna dosis gracias a los recordatorios de medicamentos
+      y crea un informe PDF para tu médico. Todos tus datos se quedan en tu teléfono.</p>
+    <ul>
+      <li>Sistólica, diastólica, pulso, brazo y notas en cada medición; edita las mediciones más tarde</li>
+      <li>Gráficos de evolución y promedios de 7, 30 y 90 días</li>
+      <li>Recordatorios de medicamentos con "Tomada", "Posponer 10 min" u "Omitir" con un solo toque desde la notificación</li>
+      <li>Un segundo recordatorio 30 minutos después si una dosis sigue sin respuesta</li>
+      <li>Control de existencias de pastillas con un recordatorio de reposición antes de que se acaben</li>
+      <li>Recordatorios de mañana y de noche para "medir tu presión arterial"</li>
+      <li>Widget de pantalla de inicio: última medición y próxima dosis de un vistazo (Android)</li>
+      <li>Informe PDF con vista previa, copia de seguridad y restauración</li>
+      <li>Disponible en inglés, turco, alemán, español, portugués, francés e italiano</li>
+    </ul>
+    <p class="muted">Solo informativo; la app no ofrece diagnóstico médico ni consejos de tratamiento.</p>
+  </div>
+
+  <div class="card" data-lang="pt">
+    <p style="margin-top:0">Registre sua pressão arterial em segundos, acompanhe as tendências em gráficos claros, nunca esqueça uma dose com os lembretes de medicamentos
+      e crie um relatório em PDF para o seu médico. Todos os seus dados ficam no seu celular.</p>
+    <ul>
+      <li>Sistólica, diastólica, pulso, braço e anotações em cada medição; edite as medições depois</li>
+      <li>Gráficos de tendência e médias de 7, 30 e 90 dias</li>
+      <li>Lembretes de medicamentos com "Tomei", "Adiar 10 min" ou "Pular" com um toque direto na notificação</li>
+      <li>Um segundo lembrete 30 minutos depois se uma dose ainda não tiver sido respondida</li>
+      <li>Controle do estoque de comprimidos com lembrete de reposição antes que acabem</li>
+      <li>Lembretes de manhã e à noite para "medir sua pressão arterial"</li>
+      <li>Widget na tela inicial: última medição e próxima dose num relance (Android)</li>
+      <li>Relatório em PDF com pré-visualização, backup e restauração</li>
+      <li>Disponível em inglês, turco, alemão, espanhol, português, francês e italiano</li>
+    </ul>
+    <p class="muted">Apenas informativo; o app não fornece diagnóstico médico nem orientação de tratamento.</p>
+  </div>
+
+  <div class="card" data-lang="fr">
+    <p style="margin-top:0">Notez votre tension artérielle en quelques secondes, suivez son évolution sur des graphiques clairs, n’oubliez plus aucune prise grâce aux rappels de médicaments,
+      et créez un rapport PDF pour votre médecin. Toutes vos données restent sur votre téléphone.</p>
+    <ul>
+      <li>Systolique, diastolique, pouls, bras et notes pour chaque mesure ; modifiez vos mesures plus tard</li>
+      <li>Graphiques d’évolution et moyennes sur 7, 30 et 90 jours</li>
+      <li>Rappels de médicaments avec « Pris », « Rappel dans 10 min » ou « Ignorer » en un geste depuis la notification</li>
+      <li>Un second rappel 30 minutes plus tard si une prise reste sans réponse</li>
+      <li>Suivi du stock de comprimés avec un rappel de renouvellement avant d’être à court</li>
+      <li>Rappels « Mesurez votre tension » le matin et le soir</li>
+      <li>Widget d’écran d’accueil : dernière mesure et prochaine prise en un coup d’œil (Android)</li>
+      <li>Rapport PDF avec aperçu, sauvegarde et restauration</li>
+      <li>Disponible en anglais, turc, allemand, espagnol, portugais, français et italien</li>
+    </ul>
+    <p class="muted">À titre informatif uniquement ; l’application ne fournit ni diagnostic médical ni conseil de traitement.</p>
+  </div>
+
+  <div class="card" data-lang="it">
+    <p style="margin-top:0">Registra la pressione arteriosa in pochi secondi, segui l’andamento su grafici chiari, non saltare mai una dose grazie ai promemoria dei farmaci
+      e crea un report PDF per il tuo medico. Tutti i tuoi dati restano sul tuo telefono.</p>
+    <ul>
+      <li>Sistolica, diastolica, battito, braccio e note per ogni misurazione; puoi modificare le misurazioni in seguito</li>
+      <li>Grafici dell’andamento e medie a 7, 30 e 90 giorni</li>
+      <li>Promemoria dei farmaci con “Presa”, “Posticipa 10 min” o “Salta” con un solo tocco dalla notifica</li>
+      <li>Un secondo promemoria 30 minuti dopo se una dose è ancora senza risposta</li>
+      <li>Monitoraggio della scorta di compresse con un promemoria per il rifornimento prima che finiscano</li>
+      <li>Promemoria mattutini e serali per “misurare la pressione”</li>
+      <li>Widget della schermata Home: ultima misurazione e prossima dose a colpo d’occhio (Android)</li>
+      <li>Report PDF con anteprima, backup e ripristino</li>
+      <li>Disponibile in inglese, turco, tedesco, spagnolo, portoghese, francese e italiano</li>
+    </ul>
+    <p class="muted">Solo a scopo informativo; l’app non fornisce diagnosi mediche né consigli terapeutici.</p>
+  </div>
+
   <p>
     <a href="privacy.html" data-lang="tr">Gizlilik Politikası</a>
     <a href="privacy.html" data-lang="en">Privacy Policy</a>
+    <a href="privacy.html" data-lang="de">Datenschutzerklärung</a>
+    <a href="privacy.html" data-lang="es">Política de privacidad</a>
+    <a href="privacy.html" data-lang="pt">Política de Privacidade</a>
+    <a href="privacy.html" data-lang="fr">Politique de confidentialité</a>
+    <a href="privacy.html" data-lang="it">Informativa sulla privacy</a>
   </p>
 
   <footer>© 2026 Pressure Diary ·
-    <span data-lang="tr">İletişim:</span><span data-lang="en">Contact:</span>
+    <span data-lang="tr">İletişim:</span><span data-lang="en">Contact:</span><span data-lang="de">Kontakt:</span><span data-lang="es">Contacto:</span><span data-lang="pt">Contato:</span><span data-lang="fr">Contact :</span><span data-lang="it">Contatto:</span>
     <a href="mailto:pressurediary.app@gmail.com">pressurediary.app@gmail.com</a></footer>
 </main>
 </body>
