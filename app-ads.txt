@@ -1,4 +1,2 @@
 # app-ads.txt for Pressure Diary / Tansiyon Takip
-# Replace pub-XXXXXXXXXXXXXXXX with your AdMob publisher id
-# (AdMob > Settings > Account information > Publisher ID), then remove the leading "# " below.
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-1278643372001660, DIRECT, f08c47fec0942fa0
