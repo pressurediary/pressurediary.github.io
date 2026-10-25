@@ -1,7 +1,7 @@
 // Shows one language at a time. Order of preference:
 // ?lang=xx in the URL, the visitor's last choice, then the browser languages.
 (function () {
-  var supported = ['tr', 'en', 'de', 'es', 'pt', 'fr', 'it'];
+  var supported = ['tr', 'en', 'de', 'es', 'pt', 'fr', 'it', 'nl', 'pl', 'ru', 'uk', 'id', 'vi', 'hi', 'ar', 'ja', 'ko'];
   function ok(code) { return supported.indexOf(code) >= 0 ? code : null; }
   function pick() {
     var q = ok(new URLSearchParams(location.search).get('lang'));
@@ -19,6 +19,7 @@
   }
   function apply(lang) {
     document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     var t = document.documentElement.getAttribute('data-title-' + lang);
     if (t) document.title = t;
     document.querySelectorAll('[data-lang-select]').forEach(function (s) { s.value = lang; });
