@@ -53,6 +53,16 @@ html[lang="es"] [data-lang]:not([data-lang="es"]) { display: none !important; }
 html[lang="pt"] [data-lang]:not([data-lang="pt"]) { display: none !important; }
 html[lang="fr"] [data-lang]:not([data-lang="fr"]) { display: none !important; }
 html[lang="it"] [data-lang]:not([data-lang="it"]) { display: none !important; }
+html[lang="ru"] [data-lang]:not([data-lang="ru"]) { display: none !important; }
+html[lang="uk"] [data-lang]:not([data-lang="uk"]) { display: none !important; }
+html[lang="pl"] [data-lang]:not([data-lang="pl"]) { display: none !important; }
+html[lang="id"] [data-lang]:not([data-lang="id"]) { display: none !important; }
+html[lang="hi"] [data-lang]:not([data-lang="hi"]) { display: none !important; }
+html[lang="ar"] [data-lang]:not([data-lang="ar"]) { display: none !important; }
+html[lang="ja"] [data-lang]:not([data-lang="ja"]) { display: none !important; }
+html[lang="ko"] [data-lang]:not([data-lang="ko"]) { display: none !important; }
+html[lang="vi"] [data-lang]:not([data-lang="vi"]) { display: none !important; }
+html[lang="nl"] [data-lang]:not([data-lang="nl"]) { display: none !important; }
 .topbar { display: flex; justify-content: flex-end; margin-bottom: 16px; }
 .lang-select {
   font: inherit; font-size: 0.9rem; padding: 6px 12px; cursor: pointer;
